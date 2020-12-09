@@ -3,4 +3,5 @@ function algoritmSobel(imgName)
     %%noisyImage = imnoise(img, 'poisson');
     smoothImage = imgaussfilt(img, 3);
     smoothGradient = imgradient(smoothImage,'CentralDifference');
-    imshow(smoothGradient, []);
+    imgR = uint8(255 - double(smoothGradient));
+    imshow(imgR, []);

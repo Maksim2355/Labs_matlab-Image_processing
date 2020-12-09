@@ -50,6 +50,5 @@ Isr = Iy_bicubic + Iresidual;
 
 Ivdsr = ycbcr2rgb(cat(3,Isr,Icb_bicubic,Icr_bicubic));
 imshow(Ivdsr)
-title('High-Resolution Image Obtained Using VDSR')
 
 
